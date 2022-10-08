@@ -1,0 +1,18 @@
+echo "[start] install latest vim"
+
+if [["$OSTYPE" == "linux-gnu"* ]] ; then
+    # latest version
+    sudo add-apt-repository ppa:jonathonf/vim
+    sudo apt update
+    sudo apt install -y vim
+
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    
+    brew install vim
+
+else  
+    echo "Not Implemented (how to install) for this os."
+    exit 1
+fi
+
+

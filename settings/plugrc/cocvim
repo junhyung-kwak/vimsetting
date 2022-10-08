@@ -1,0 +1,5 @@
+
+CocInstall coc-json  
+CocInstall coc-python 
+CocInstall coc-clangd 
+CocCommand clangd.install

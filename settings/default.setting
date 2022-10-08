@@ -1,0 +1,52 @@
+if has("syntax")
+syntax on
+endif
+
+"set autoindent
+"set cindent
+
+set nu
+
+
+set smartindent
+set ts=4 "width of tab character
+set shiftwidth=4 " determines the amount of wihtespace to add in normal mode
+set softtabstop=4 " fine tunes the amount of white space to be added
+
+" exists complemetary between below two lines
+set expandtab " when this option is enabled, vi will use spaces instead of tabs
+set listchars=tab:\|\ 
+set list
+
+set autowrite
+set autoread
+
+
+"cursor position
+au BufReadPost *
+\ if line("'\"") > 0 && line("'\"") <= line("$") |
+\ exe "norm g`\"" |
+\ endif 
+
+set showmatch " hightlight  ~
+set hlsearch
+
+"color 
+highlight Comment term=bold cterm=bold ctermfg=4
+"set viminfo+=<200
+
+" vim yank limit
+" https://stackoverflow.com/questions/3676855/vim-limited-line-memory
+set viminfo='100,<1000,s100,h 
+
+colorscheme jellybeans 
+"colorscheme desert
+
+" make swap files in another directory
+set backupdir=${HOME}
+set directory=${HOME}
+
+" rm left error bar
+set signcolumn=no
+" when backspace not working in insert mode
+set backspace=indent,eol,start

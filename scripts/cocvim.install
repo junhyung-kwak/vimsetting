@@ -1,0 +1,7 @@
+
+
+input="./settings/plugrc/cocvim"
+while IFS= read -r line
+do
+  vim +"$line" +q +q # install command line by line
+done < "$input"
