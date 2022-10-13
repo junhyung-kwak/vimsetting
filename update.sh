@@ -1,6 +1,7 @@
 
 echo -e "> choose type of vim plug-in module(none/[vim-plug]/vundle) : "
 read TYPE
+TYPE=${TYPE:-vim-plug}
 
 # install default vim
 bash ./scripts/vim.install 
