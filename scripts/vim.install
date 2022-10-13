@@ -1,6 +1,6 @@
 echo "[start] install latest vim"
 
-if [["$OSTYPE" == "linux-gnu"* ]] ; then
+if [[ "$OSTYPE" == "linux-gnu"* ]] ; then
     # latest version
     sudo add-apt-repository ppa:jonathonf/vim
     sudo apt update

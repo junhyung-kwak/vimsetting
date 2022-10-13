@@ -1,13 +1,14 @@
 
-echo -e "> choose type of vim plug-in module(none/vim-plug/vundle) : "
+echo -e "> choose type of vim plug-in module(none/[vim-plug]/vundle) : "
 read TYPE
 
 # install default vim
 bash ./scripts/vim.install 
 
+sudo apt install -y git
 # copy (default & plug) settings to vimrc
-echo settings/vimrc > $HOME/.vimrc
-echo settings/plugrc/$TYPE.setting >> $HOME/.vimrc
+cat settings/defalut.setting > $HOME/.vimrc
+cat settings/plugrc/$TYPE.setting >> $HOME/.vimrc
 
 # update color scheme
 mkdir -p ${HOME}/.vim/colors/
