@@ -2,6 +2,8 @@ TYPE=$1
 
 
 echo "[start] install plugin"
+
+source <(curl -sL https://deb.nodesource.com/setup_12.x) # add PPA for upgrading nodejs
 sudo apt install nodejs -y
 
 if [ "$TYPE" = "vim-plug" ] ;then
