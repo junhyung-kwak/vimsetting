@@ -8,7 +8,7 @@ bash ./scripts/vim.install
 
 sudo apt install -y git
 # copy (default & plug) settings to vimrc
-cat settings/defalut.setting > $HOME/.vimrc
+cat settings/default.setting > $HOME/.vimrc
 cat settings/plugrc/$TYPE.setting >> $HOME/.vimrc
 
 # update color scheme
