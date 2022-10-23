@@ -2,11 +2,12 @@ TYPE=$1
 
 
 echo "[start] install plugin"
+sudo apt install -y curl
 
 # https://github.com/neoclide/coc.nvim
-# source <(curl -sL https://deb.nodesource.com/setup_12.x) # add PPA for upgrading nodejs
-curl -sL install-node.vercel.app/lts | bash
-sudo apt install nodejs -y
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - # add PPA for upgrading nodejs
+# curl -sL install-node.vercel.app/lts | bash
+sudo apt install -y nodejs
 
 if [ "$TYPE" = "vim-plug" ] ;then
 
