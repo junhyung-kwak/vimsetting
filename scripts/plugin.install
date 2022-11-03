@@ -1,0 +1,8 @@
+plugin_dir="$HOME/.vimrc/plugin"
+mkdir -p $plugin_dir
+
+input="./settings/plugrc/plugin.setting"
+while IFS= read -r line
+do
+  (cd $plugin_dir && curl -O "$line") # install command line by line
+done < "$input"
