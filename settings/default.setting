@@ -54,4 +54,8 @@ set backspace=indent,eol,start
 " default keymapping 
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
+" " vmap : visual mode
+vmap <Tab> :><CR>
+
+" read : https://blog.naver.com/nfwscho/220407221737, https://nolboo.kim/blog/2016/12/05/practical-vim/
 
