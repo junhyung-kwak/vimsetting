@@ -50,3 +50,8 @@ set directory=${HOME}
 set signcolumn=no
 " when backspace not working in insert mode
 set backspace=indent,eol,start
+
+" default keymapping 
+map <C-n> :cn<CR>
+map <C-p> :cp<CR>
+
