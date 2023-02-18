@@ -32,3 +32,6 @@ nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 " nerdtree toggle
 map <C-b> :NERDTreeToggle<CR>
+
+" auto complete selection
+inoremap <silent><expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
