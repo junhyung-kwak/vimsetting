@@ -8,7 +8,7 @@ endif
 set nu
 
 
-set smartindent
+" set smartindent
 set ts=4 "width of tab character
 set shiftwidth=4 " determines the amount of wihtespace to add in normal mode
 set softtabstop=4 " fine tunes the amount of white space to be added
